@@ -1,0 +1,47 @@
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+#title-main{    color: white;}
+#title-main::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+  }
+
+  #navbar{background-color: rgba(37, 37, 37, 0.911) !important;}
+  #navbar ul li a {color: aliceblue;}
+
+
+
+
+#habilidades{
+    background: linear-gradient(180deg, rgba(12, 12, 14, 0.911) 0%,
+         rgba(78, 161, 230, 0.699) 100%); 
+    padding-top:80px;
+}
+
+#front-end-section{
+    background-color: rgba(12, 12, 14, 0.671); 
+    border-radius: 20px; 
+    padding: 25px 20px;
+}
+
+
+/* Animação Scroll */
+    [data-anime]{opacity:0; transition:2s;}
+    [data-anime].animate{opacity:1; transform:translate3d(0,0,0);}
+    [data-anime="right"]{transform:translate3d(150px,0,0);}
+    [data-anime="left"]{transform:translate3d(-150px,0,0);}
+    [data-anime="up"]{transform:translate3d(0,-60px,0);}
+/*            */
+
+
+  @keyframes pisca {
+    0%,100%{opacity: 1;}
+    50%{opacity: 0;}
+  }
+
+  
